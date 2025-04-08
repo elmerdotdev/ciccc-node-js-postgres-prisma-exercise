@@ -11,7 +11,7 @@
     **Full SQL commands:**
 
     ```bash
-    CREATE USER shopowner WITH PASS '12345';
+    CREATE USER shopowner WITH PASSWORD '12345';
     CREATE DATABASE awesome_shop;
     GRANT ALL PRIVILEGES ON DATABASE awesome_shop TO shopowner;
     ALTER DATABASE awesome_shop OWNER TO shopowner;
@@ -32,9 +32,9 @@
 6. Run `npx prisma migrate dev --name awesome-shop-products` to create and apply the migration file to the database and generate your Prisma client. If you make changes to the schema, you need to run this command again.
 7. Create your CRUD functionality by creating your MVC files:
 
-    - product.model.ts
-    - product.controller.ts
-    - product.routes.ts
+    - `product.model.ts`
+    - `product.controller.ts`
+    - `product.routes.ts`
 
 8. Test your API routes using Postman and verify that you are able to do CRUD.
 9. Once you are done, commit and push your changes.
